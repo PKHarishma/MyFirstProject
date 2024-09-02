@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" async></script>
+
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        </style>
+</head>
+<body>
+<!-- header section -->
+    <div class="2xl:container mx-auto">
+        <div class="w-[98%] mx-auto grid grid-cols-1">
+            <div class="flex flex-col sm:flex-row justify-between items-center bg-black h-auto sm:h-14 p-2">
+                <div class="flex justify-start text-[white] mb-2 sm:mb-0">
+                    <p class="mr-1">Login</p>
+                    <p class="mr-1">|</p>
+                    <p class="mr-1">Sign Up</p>
+                </div>
+                <div class="flex justify-start text-[white]">
+                    <p class="flex items-center">
+                        <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                            <path d="M11 1a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1V2a1 1 0 011-1h6zM5 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V2a2 2 0 00-2-2H5z"/>
+                            <path d="M8 14a1 1 0 100-2 1 1 0 000 2z"/>
+                        </svg>
+                    </p>
+                    <p class="ml-2">+ 86.31.166</p>
+                    <p class="mx-2">|</p>
+                    <p class="flex items-center">
+                        <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
+                            <path d="M24 7h-2v6h2V7m0 8h-2v2h2v-2m-4-9c0-1.1-.9-2-2-2H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5-8-5h16m0 12H2V8l8 5 8-5v10z"/>
+                        </svg>
+                    </p>
+                    <p class="ml-2">contact@yourdomain.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="2xl:container mx-auto my-7">
+          <div class="w-[90%] mx-auto grid grid-cols-2">
+            <!-- Start Div -->
+              <div class="flex justify-start space-x-4">
+                <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/icon-1.png" alt="Logo" id="logo"  >
+                  <div class="hidden lg:flex justify-start space-x-4">
+                    
+                  <p class=""><a href="#home">Home</a></p>
+                  <p class="">About</p>
+                  <p class=""><a href="#blog">Blog</a></p>
+                  <p class=""><a href="#shop">Shop</a></p>
+                  <p class=""><a href="#contact">Contact</a></p>
+                  </div>
+                  <span class="hidden" id="cross"><svg fill="none" viewBox="0 0 15 15" height="1em" width="1em" {...props}>
+                    <path
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      d="M.877 7.5a6.623 6.623 0 1113.246 0 6.623 6.623 0 01-13.246 0zM7.5 1.827a5.673 5.673 0 100 11.346 5.673 5.673 0 000-11.346zm2.354 3.32a.5.5 0 010 .707L8.207 7.5l1.647 1.646a.5.5 0 01-.708.708L7.5 8.207 5.854 9.854a.5.5 0 01-.708-.708L6.793 7.5 5.146 5.854a.5.5 0 01.708-.708L7.5 6.793l1.646-1.647a.5.5 0 01.708 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg></span>
+                  <div id="menubar" class="  hidden sm:flex flex-col justify-center items-end lg:hidden">
+                    <p class="my-3 text-[20px] font-medium">Home</p>
+                    <p class="my-3 text-[20px] font-medium">About</p>
+                    <p class="my-3 text-[20px] font-medium">Blog</p>
+                    <p class="my-3 text-[20px] font-medium">Shop</p>
+                    <p class="my-3 text-[20px] font-medium">Contact</p>
+                    </div>
+                  
+              </div>
+            
+            <!-- End Div -->
+            <div class="flex justify-end items-center space-x-4 ">
+              <p class="hidden lg:block mx-3">Search</p>
+             <span class="hidden lg:block" id="search"><svg
+              viewBox="0 0 1024 1024"
+              fill="currentColor"
+              class="h-6 w-6"
+            >
+              <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z" />
+            </svg></span>
+              <span class="hidden lg:block mx-3" ><button class="bg-[brown] text-white py-2 px-9 rounded-full ">
+                Basket(0)
+                </button></span>
+              <span class="lg:hidden mx-3" id="basket"><svg
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                {...props}
+              >
+                <path d="M5.757 1.071a.5.5 0 01.172.686L3.383 6h9.234L10.07 1.757a.5.5 0 11.858-.514L13.783 6H15a1 1 0 011 1v1a1 1 0 01-1 1v4.5a2.5 2.5 0 01-2.5 2.5h-9A2.5 2.5 0 011 13.5V9a1 1 0 01-1-1V7a1 1 0 011-1h1.217L5.07 1.243a.5.5 0 01.686-.172zM2 9v4.5A1.5 1.5 0 003.5 15h9a1.5 1.5 0 001.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 01.5.5v3a.5.5 0 01-1 0v-3A.5.5 0 014 10zm2 0a.5.5 0 01.5.5v3a.5.5 0 01-1 0v-3A.5.5 0 016 10zm2 0a.5.5 0 01.5.5v3a.5.5 0 01-1 0v-3A.5.5 0 018 10zm2 0a.5.5 0 01.5.5v3a.5.5 0 01-1 0v-3a.5.5 0 01.5-.5zm2 0a.5.5 0 01.5.5v3a.5.5 0 01-1 0v-3a.5.5 0 01.5-.5z" />
+              </svg></span>
+              <span class="lg:hidden mx-3" id="menu"><svg
+                viewBox="0 0 1024 1024"
+                fill="currentColor"
+                height="1em"
+                width="1em"
+                {...props}
+              >
+                <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z" />
+              </svg></span>
+            </div>
+          </div>
+        </div>
+        <div class="2xl:container mx-auto" id="home">
+        <div class="w-[90%] mx-auto bg-[#e5dbc6] border rounded-2xl h-[100%] mt-9 grid grid-cols-1">
+          <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/landing-slider-4.png')] h-[170px] w-[100%] bg-no-repeat bg-center">
+            <span class="w-[100%] flex justify-end"> <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/landing-slider-5-removebg-preview%20(1)_batcheditor_fotor.png" alt="" ></span>
+          </div>
+          <div class="ml-3 md:flex justify-center items-center">
+            <div>
+              <div >
+                <h1 class="text-[#873e23] font-[Pacifico] font-extrabold text-[35px] mt-5">Confectionery</h1>
+                <p class="text-[30px] font-serif mb-2 font-bold">Make Your</p>
+                <p class="text-[30px] font-serif mb-2 font-bold">Baking better</p>
+                <p class="text-[30px] font-serif mb-2 font-bold">Tasting</p>
+              </div>
+              <div class="flex justify-start my-7">
+                <span class="mr-3"><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/brownie-removebg-preview%20(2).png?updatedAt=1725096201903" alt="" class="h-36"></span>
+                <div>
+                  <h1 class="font-bold text-[#873e23] text-[20px] text-[Courgette]">Chocolate Cake</h1>
+                  <p>The quick, brown fox</p><p> jumps over a lazy dog.</p> <p>DJs flock by when</p>
+                </div>
+               
+              </div>
+              <div class="">
+                <a href="#shop"><button class="bg-[#873e23] px-9 py-4 border rounded-full text-[white]">Shop Here</button></a>
+                <button class="bg-[black] text-[white] px-6 py-4 border rounded-full">Customer Order</button>
+              </div>
+              
+            </div>
+            <div>
+              <span><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/bun-removebg-preview%20(2).png" alt="" class=" w-[400px] items-center "></span>
+            </div>
+          </div>
+         <span class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/bg-2.png?updatedAt=1725106923507')] h-[200px]  bg-no-repeat bg-contain  flex justify-center">
+          <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/chocoman-removebg-preview%20(1).png" alt="">
+          
+         </span>
+           </div>
+        </div>
+    </div>
+    <div class="2xl:conatiner mx-auto my-11" id="shop">
+      <div class="w-[98%] h-auto mx-auto grid grid-cols-1">
+       <div class="flex flex-col justify-center items-center">
+        <p class="font-[Pacifico] text-[#873e23] font-bold text-[30px]">Which one</p>
+        <p class="font-bold text-[30px] ">Shop by category</p>
+       </div>
+
+
+      </div>
+    </div>
+    <div class="2xl:container mx-auto" >
+      <div class="w-[90%] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- First Grid Item -->
+          <div class="transform transition-transform duration-300 hover:scale-105 loa">
+            <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/card3.png')] bg-no-repeat h-[300px] bg-center bg-[#a5e4c7] bg-cover text-[white] p-4 border rounded-xl flex flex-col shadow-lg">
+              <p class="font-bold text-lg">Coffee</p>
+              <p class="text-md">Local Donuts</p>
+              <p class="text-sm">The quick, brown fox jumps over a lazy dog. DJs flock by when</p>
+              <span><a href="#seller"><button type="button" class="bg-[#873e23] px-6 py-3 border rounded-full mt-2">Browse now</button></a></span>
+            </div>
+
+          </div>
+          <!-- Second Grid Item -->
+          <div class="transform transition-transform duration-300 hover:scale-105">
+            <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/ai-generated-8678754_640%20(1).jpg')] h-[300px] bg-no-repeat bg-[#f6a06b] bg-cover bg-center  flex justify-center   p-3 rounded-xl">
+              <p class="text-[#efd6bb] font-[Pacifico] font-bold text-[25px]">Home made</p>
+              <p class="text-[#efd6bb] font-[Pacifico] font-bold text-[25px]">CupCake</p>
+            </div>
+          </div>
+          
+          <!-- Third Grid Item -->
+          <div class="transform transition-transform duration-300 hover:scale-105">
+            <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/pexels-oksana-d-649220-3141268.jpg')] h-[300px] bg-cover bg-no-repeat bg-[yellow] border rounded-xl p-3 flex justify-center">
+              <h1 class="font-[Pacifico] text-[30px] font-bold text-[#efd6bb] ">Crrosiant</h1>
+            </div>
+          </div>
+          
+          <!-- Fourth Grid Item -->
+          <div class="transform transition-transform duration-300 hover:scale-105">
+            <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/cake-2856551_1280%20(1).jpg')] bg-no-repeat bg-cover h-[300px] bg-yellow-600 border rounded-xl p-3">
+              <div class=" font-[Pacifico] font-bold text-[25px] text-[#efd6bb] flex flex-col items-end">
+                <p>Breakfast</p>
+                <p>Chocolate Cake </p>
+                <span class="bg-[#873e23] font-serif px-6 text-[15px] border rounded-full my-3 py-2 font-normal"><a href="#seller"><button type="button">Browse now</button></a></span>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <!-- end of purchase -->
+     <div class="2xl:container mx-auto my-7">
+      <div class="w-[90%] mx-auto">
+       <div class="flex flex-col justify-center items-center">
+        <p class="text-[#873e23] text-[40px] font-[Pacifico] font-medium">Best Seller</p>
+        <p class="text-[40px] ">Best Seller This Week!</p>
+       </div>
+      </div>
+     </div>
+     <div class="2xl:container" id="seller">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div1">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/div2-removebg-preview.png" alt="Chocolate Cake" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d1"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Chocolate Cake</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$21.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div2">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div1-removebg-preview.png" alt="Cup Cake" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d2"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Cup Cake</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$32.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div3">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div3-removebg-preview.png" alt="Choco Cherry" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d3"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Choco Cherry</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$28.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div4">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div4-removebg-preview.png" alt="Party Cake" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d4"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Party Cake</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$42.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div5">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div5-removebg-preview.png" alt="Cream Cookies" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d5"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Cream Cookies</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$34.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div6">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div1-removebg-preview.png" alt="Fruit Cherry" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border rounded-3xl  px-7 py-3 text-white" id="d6"><button>Add to cart</button></div>
+            </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Fruit Cherry</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$28.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div7">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div7-removebg-preview.png" alt="Cereal Donut" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border  text-white rounded-3xl  px-7 py-3" id="d7"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Cereal Donut</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$16.00</p>
+          </div>
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-105" id="div8">
+          <div class="bg-[#e1d0a3] flex flex-col justify-center items-center border rounded-2xl">
+            <img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div8-removebg-preview.png" alt="Tiramisu Cake" loading="lazy">
+            <div class="hidden bg-[#551111] mb-9 border text-white rounded-3xl  px-7 py-3" id="d8"><button>Add to cart</button></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p class="text-[#873e23] font-bold text-[20px]">Tiramisu Cake</p>
+            <p class="text-[#e7b42b] text-[20px] font-bold">$52.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     </div>
+     <div class="2xl:container mx-auto mt-5">
+      <div class="w-[90%] mx-auto">
+        <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/front-view-delicious-chocolate-cake-stand-with-copy-space.jpg')] w-[100%] bg-cover bg-right h-[500px] border rounded-2xl text-center lg:flex flex-col justify-center items-center ">
+          <p class="font-[Pacifico] text-white text-[50px] my-3">Shop confecrionery</p>
+          <p class="font-mono text-[20px] text-white">Raspberry French</p>
+          <p class="font-mono text-[20px] text-white">Macaron Cake</p>
+          <span><button class="bg-yellow-600 px-8 py-3 border rounded-2xl my-3"><a href="#seller">Shop now</a></button></span>
+        </div>
+
+      </div>
+     </div>
+     <div class="2xl:container mx-auto">
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+        <div class="text-center my-9">
+           <p class="text-[#873e23] font-bold text-[30px] font-[Pacifico]">Testimonial</p>
+           <p class="font-bold text-[30px]">We care about our customers</p>
+           <p class="font-bold text-[30px]">experience too</p>
+        </div>
+      </div>
+     </div>
+     <div class="2xl:container mx-auto" id="contact">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+         <div class="flex flex-col justify-center items-center">
+          <span><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div2-1.png" alt=""></span>
+          <p class="font-bold text-[20px]">Bruce Hardy</p>
+          <p class="mt-5">paypal inc.</p>
+          <p>When, while lovely</p>
+          <p>valley teems with</p>
+          <p>vapour around</p>
+          <p>meand meridian</p>
+          <p>sun strikes</p>
+         </div>
+         <div class="flex flex-col justify-center items-center ">
+          <span><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div2-2.png" alt=""></span>
+          <p class="font-bold text-[20px]">Mark Smith</p>
+          <p class="mt-5">Google Inc.</p>
+          <p></p>
+          <p>When, while lovely valley</p>
+          <p>teems with vapour</p>
+          <p>around meand meridian</p>
+          <p>sun strikes the upper</p>
+          <p> impenetrable .</p>
+         </div>
+         <div class="flex flex-col justify-center items-center ">
+          <span><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div2-3.png" alt=""></span>
+          <p class="font-bold text-[20px]">Vera Duncan</p>
+          <p class="mt-5">Google Inc.</p>
+          <p></p>
+          <p>When, while lovely</p>
+          <p>valley teems with</p>
+          <p>vapour around</p>
+          <p>meand meridian</p>
+          <p>sun strikes</p>
+         </div>
+         <div class="flex flex-col justify-center items-center">
+          <span><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/div2-1.png?updatedAt=1725176495976" alt=""></span>
+          <p class="font-bold text-[20px]">Mark Smith</p>
+          <p class="mt-5">Google Inc.</p>
+          <p></p>
+          <p>When, while lovely valley</p>
+          <p>teems with vapour</p>
+          <p>around meand meridian</p>
+          <p>sun strikes the upper</p>
+          <p> impenetrable .</p>
+         </div>
+      </div>
+     </div>
+     <div class="2xl:container mx-auto my-7" id="blog">
+      <div class="w-[90%] mx-auto">
+        <div class="bg-[url('https://ik.imagekit.io/1rpg1lzbz/mern1/front-view-delicious-cake-concept%20(1).jpg')] bg-cover border rounded-lg w-[100%] h-[600px] text-center lg:flex flex-col justify-center items-center">
+          <p class="text-[40px] font-[Pacifico] text-yellow-400 font-bold mb-3 pt-2">Get Started</p>
+          <p class="text-[40px] font-mono text-[#eaeae9]">Great Customers are using the</p>
+          <p class="text-[40px] font-mono text-[#eaeae9]">confectionery shop</p>
+          <span ><input type="email" placeholder="Enter your Email address" class="bg-[white] text-[20px] px-14 text-[#751c1c] border rounded-xl mt-3 "></input></span><br>
+          <span><button type="submit" class="bg-[#a92121] text-white border rounded-2xl px-5 py-2 my-3">Subscribe</button></span>
+        </div>
+      </div>
+     </div>
+     <div class="2xl:container mx-auto">
+     <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
+    
+     <div ><img src="https://ik.imagekit.io/1rpg1lzbz/mern1/icon-1.png" alt="" class="w-24 h-20"></div>
+     <div>
+     <p class="mb-3 font-bold">Product</p>
+     <p>Universal Cake</p>
+     <p>Candy</p>
+     <p>Confectionery</p>
+     <p>Gifts</p>
+     </div>
+     <div>
+      <p class="mb-3 font-bold">Comapny</p>
+      <p>Condition</p>
+      <p>Open a shop</p>
+      <p>Licence & terms</p>
+      <p>Technology</p>
+      </div>
+      <div>
+        <p class="mb-3 font-bold">About</p>
+        <p>Our mission</p>
+        <p>our story</p>
+        <p>our culture</p>
+        <p>Team</p>
+        </div>
+        <div>
+          <p class="mb-3 font-bold">Support</p>
+          <p>Universal Cake</p>
+          <p>Candy</p>
+          <p>Confectionery</p>
+          <p>Gifts</p>
+          </div>
+     
+     </div>
+     </div>
+     <div class="2xl:container mx-auto mt-6 py-4 bg-[#4a0d0d] text-white">
+      <div class="w-[98%] mx-auto grid  grid-cols-1 lg:grid-cols-2">
+        <div class="flex justify-start items-start">
+          <p>Copyright </p>
+          <span class="flex flex-col justify-end"> <svg
+            viewBox="0 0 1024 1024"
+            fill="currentColor"
+            height="1em"
+            width="1em"
+            {...props}
+          >
+            <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372zm5.6-532.7c53 0 89 33.8 93 83.4.3 4.2 3.8 7.4 8 7.4h56.7c2.6 0 4.7-2.1 4.7-4.7 0-86.7-68.4-147.4-162.7-147.4C407.4 290 344 364.2 344 486.8v52.3C344 660.8 407.4 734 517.3 734c94 0 162.7-58.8 162.7-141.4 0-2.6-2.1-4.7-4.7-4.7h-56.8c-4.2 0-7.6 3.2-8 7.3-4.2 46.1-40.1 77.8-93 77.8-65.3 0-102.1-47.9-102.1-133.6v-52.6c.1-87 37-135.5 102.2-135.5z" />
+          </svg></span>
+         <p> 2024. All rights reserved</p>
+          
+        </div>
+        <div class=" flex  lg:flex justify-end  ">
+          <div class="ml-4"><svg
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            height="1em"
+            width="1em"
+            {...props}
+          >
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg></div>
+          <div  class="ml-4"><svg
+            viewBox="0 0 1024 1024"
+            fill="currentColor"
+            height="1em"
+            width="1em"
+            {...props}
+          >
+            <path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 00-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" />
+          </svg></div>
+          <div  class="ml-4">
+            <svg
+      viewBox="0 0 1024 1024"
+      fill="currentColor"
+      height="1em"
+      width="1em"
+      {...props}
+    >
+      <path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z" />
+    </svg>
+  </div>
+
+        </div>
+
+      </div>
+     </div>
+    
+   
+   
+    
+</body>
+</html>
